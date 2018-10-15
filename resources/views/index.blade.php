@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Material Dashboard by Creative Tim
+    Profil Sekolah 
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -27,50 +27,50 @@
     -->
       <div class="logo">
         <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Creative Tim
+          Profil Sekolah
         </a>
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="nav-item active  ">
             <a class="nav-link" href="#0">
-              <i class="material-icons">dashboard</i>
+              <i class="fa fa-file-text-o" aria-hidden="true"></i>
               <p>Data Siswa</p>
             </a>
           </li>
           <li class="nav-item active  ">
             <a class="nav-link" href="#0">
-              <i class="material-icons">dashboard</i>
+             <i class="fa fa-file-text-o" aria-hidden="true"></i>
               <p>Data Kelas</p>
             </a>
           </li>
           <li class="nav-item active  ">
             <a class="nav-link" href="#0">
-              <i class="material-icons">dashboard</i>
+              <i class="fa fa-file-text-o" aria-hidden="true"></i>
               <p>Data Guru</p>
             </a>
           </li>
           <li class="nav-item active  ">
             <a class="nav-link" href="#0">
-              <i class="material-icons">dashboard</i>
+              <i class="fa fa-file-text-o" aria-hidden="true"></i>
               <p>Data Staff</p>
             </a>
           </li>
           <li class="nav-item active  ">
             <a class="nav-link" href="#0">
-              <i class="material-icons">dashboard</i>
+              <i class="fa fa-file-text-o" aria-hidden="true"></i>
               <p>Data Acara</p>
             </a>
           </li>
           <li class="nav-item active  ">
             <a class="nav-link" href="#0">
-              <i class="material-icons">dashboard</i>
+              <i class="fa fa-file-text-o" aria-hidden="true"></i>
               <p>Data Pengumuman</p>
             </a>
           </li>
           <li class="nav-item active  ">
             <a class="nav-link" href="#0">
-              <i class="material-icons">dashboard</i>
+              <i class="fa fa-file-text-o" aria-hidden="true"></i>
               <p>Data Prestasi</p>
             </a>
           </li>
@@ -82,25 +82,14 @@
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">
-          <div class="navbar-wrapper">
-            <a class="navbar-brand" href="#pablo">Dashboard</a>
-          </div>
+          
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
             <span class="navbar-toggler-icon icon-bar"></span>
             <span class="navbar-toggler-icon icon-bar"></span>
             <span class="navbar-toggler-icon icon-bar"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#pablo">
-                  <i class="material-icons">notifications</i> Notifications
-                </a>
-              </li>
-              <!-- your navbar here -->
-            </ul>
-          </div>
+          
         </div>
       </nav>
       <!-- End Navbar -->
@@ -109,27 +98,6 @@
           <!-- your content here -->
         </div>
       </div>
-      <footer class="footer">
-        <div class="container-fluid">
-          <nav class="float-left">
-            <ul>
-              <li>
-                <a href="https://www.creative-tim.com">
-                  Creative Tim
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="copyright float-right">
-            &copy;
-            <script>
-              document.write(new Date().getFullYear())
-            </script>, made with <i class="material-icons">favorite</i> by
-            <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
-          </div>
-          <!-- your footer here -->
-        </div>
-      </footer>
     </div>
   </div>
   <!--   Core JS Files   -->
