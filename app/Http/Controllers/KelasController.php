@@ -3,36 +3,47 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Kelas;
 
 class KelasController extends Controller
 {
     public function index()
     {
-    	
+    	$kelas = Kelas::all();
+    	return view('Kelas.index', compact('kelas'));
     }
-
     public function create()
     {
-    	# code...
+    	return view('Kelas.create');
     }
-
-    public function save()
+    public function save(Request $r)
     {
-    	# code...
+    	$Kelas = new Kelas;
+        $Kelas->nama_kelas = $r->nama_kelas;
+        $Kelas->save();
+
+        return redirect()->route('kelas.index');
     }
-
-    public function edit()
+    public function edit($id)
     {
-    	# code...
+    	$kelas = Kelas::find($id);
+    	return view('Kelas.edit', compact('kelas'));
     }
-
-    public function update()
+    public function update(Request $r)
     {
-    	# code...
+    	$kelas = kelas::find($r->input('id'));
+
+		$kelas->nama_kelas = $r->input('kelas');
+
+		$kelas->save();
+		return redirect()->route('kelas.index');
+
     }
-
-    public function delete()
+    public function delete($id)
     {
-    	# code...
+    	$kelas = Kelas::find($id);
+
+		$kelas->delete();
+     	return redirect()->route('kelas.index');
     }
 }

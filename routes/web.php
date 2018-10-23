@@ -51,13 +51,13 @@ Route::group(['prefix'=>'pengumuman','as'=>'pengumuman'],function(){
 
 
 
-Route::group(['prefix'=>'staff','as'=>'staff'],function(){
+Route::group(['prefix'=>'staff','as'=>'staff.'],function(){
 	Route::get('/','StaffController@index')->name('index');
 	Route::get('/create','StaffController@create')->name('create');
 	Route::post('save','StaffController@save')->name('save');
 	Route::get('/edit/{id}','StaffController@edit')->name('edit');
 	Route::post('/update','StaffController@update')->name('update');
-	Route::get('/delete','StaffController@delete')->name('delete');	
+	Route::get('/delete/{id}', ['uses' => 'StaffController@delete'])->name('delete');	
 });
 
 
