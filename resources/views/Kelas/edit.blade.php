@@ -9,18 +9,11 @@
 <div class="container">
 <div class="content-wrapper">
 <h3>KELAS</h3>
-<form method="post" action="{{ route('update') }}">
-{{csrf_field()}}
-<input type="hidden" name="id" value="{{$kelas->id}}">
-
-<div class="row">
-<div class="col-md-4"></div>
-<div class="form-group col-md-4">
-<button type="submit">masukan data</button>
-</div>
-</div>
-</div>
-</div>
+<form method="post" action="{{ route('kelas.update') }}">
+	{{csrf_field()}}
+	<input type="hidden" name="id" value="{{ $kelas->id }}">
+	<input type="text" name="kelas" value="{{ $kelas->nama_kelas }}">
+	<button type="submit">update data</button>
 </form>
 </div>
 </div>
