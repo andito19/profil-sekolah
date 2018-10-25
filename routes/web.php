@@ -71,11 +71,7 @@ Route::group(['prefix'=>'acara','as'=>'acara'],function(){
 	Route::get('/delete','AcaraController@delete')->name('delete');
 });
 
-
-
-
 Route::resource('guru', 'GuruController');
-
 
 Route::group(['prefix'=>'siswa','as'=>'siswa'],function(){
 	Route::get('/','SiswaController@index')->name('index');
