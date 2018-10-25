@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
   <link href="{{asset('template/dashboard/assets/css/material-dashboard.css?v=2.1.0')}}" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ asset('css/datepicker.min.css') }}">
 </head>
 
 <body class="">
@@ -111,6 +112,7 @@
   <script src="{{asset('template/dasboard/assets/js/plugins/bootstrap-notify.js')}}"></script>
   <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="{{asset('template/dashboard/assets/js/material-dashboard.min.js?v=2.1.0')}}" type="text/javascript"></script>
+  <script src="{{ asset('js/datepicker.min.js') }}" charset="utf-8"></script>
 </body>
 
 </html>
