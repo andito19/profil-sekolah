@@ -102,17 +102,18 @@
     </div>
   </div>
   <!--   Core JS Files   -->
-  <script src="{{asset('template/dashboard/assets/js/core/jquery.min.js" type="text/javascript')}}"></script>
-  <script src="{{asset('template/dashboard/assets/js/core/popper.min.js" type="text/javascript')}}"></script>
-  <script src="{{asset('template/dashboard/assets/js/core/bootstrap-material-design.min.js')}}" type="text/javascript"></script>
-  <script src="{{asset('template/dashboard/assets/js/plugins/perfect-scrollbar.jquery.min.js')}}"></script>
+  <script src="{{ asset('template/dashboard/assets/js/core/jquery.min.js') }}"></script>
+  <script src="{{ asset('template/dashboard/assets/js/core/popper.min.js') }}"></script>
+  <script src="{{ asset('template/dashboard/assets/js/core/bootstrap-material-design.min.js') }}"></script>
+  <script src="{{ asset('template/dashboard/assets/js/plugins/perfect-scrollbar.jquery.min.js') }}"></script>
   <!-- Chartist JS -->
-  <script src="{{asset('template/dashboard/assets/js/plugins/chartist.min.js')}}"></script>
+  <script src="{{ asset('template/dashboard/assets/js/plugins/chartist.min.js') }}"></script>
   <!--  Notifications Plugin    -->
-  <script src="{{asset('template/dasboard/assets/js/plugins/bootstrap-notify.js')}}"></script>
+  <script src="{{ asset('template/dasboard/assets/js/plugins/bootstrap-notify.js') }}"></script>
   <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="{{asset('template/dashboard/assets/js/material-dashboard.min.js?v=2.1.0')}}" type="text/javascript"></script>
-  <script src="{{ asset('js/datepicker.min.js') }}" charset="utf-8"></script>
+  <script src="{{ asset('template/dashboard/assets/js/material-dashboard.min.js?v=2.1.0') }}"></script>
+  <script src="{{ asset('js/datepicker.min.js') }}"></script>
+  <script src="{{ asset('js/datepicker.en.js') }}"></script>
 </body>
 
 </html>

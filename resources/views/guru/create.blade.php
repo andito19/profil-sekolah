@@ -18,7 +18,7 @@
       <input type="text" name="Tempat_lahir" class="form-control" placeholder="Tempat Lahir">
     </div>
     <div class="form-group col">
-      <input type="date" name="Tgl_lahir" class="form-control" placeholder="Tanggal Lahir">
+      <input type="text" name="Tgl_lahir" class="datepicker-here form-control" placeholder="Tanggal Lahir" data-language="en">
     </div>
   </div>
   <div class="form-row mb-2">
