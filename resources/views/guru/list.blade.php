@@ -16,7 +16,7 @@
     <tbody>
         @foreach ($list_guru as $guru)
           <tr>
-            <td class="text-capitalize text-center">{{ $guru->Nip }}</td>
+            <td class="text-capitalize text-center"><a href="{{ route('guru.show', $guru->id) }}">{{ $guru->Nip }}</a></td>
             <td class="text-capitalize text-center">{{ $guru->Nama }}</td>
             <td class="text-capitalize text-center">{{ $guru->Tempat_lahir }}, {{ $guru->Tgl_lahir }}</td>
             <td class="text-capitalize text-center">{{ $guru->Jk }}</td>

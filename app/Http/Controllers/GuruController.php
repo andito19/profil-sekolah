@@ -56,7 +56,8 @@ class GuruController extends Controller
      */
     public function show($id)
     {
-        //
+        $per_guru = Guru::findOrFail($id);
+        return view('guru.per_guru', compact('per_guru'));
     }
 
     /**
