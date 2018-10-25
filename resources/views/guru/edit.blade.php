@@ -2,7 +2,7 @@
 @section('title', 'Edit Guru')
 @section('content')
 
-<h1 class="h3">Edit Guru {{ $edit_guru->Nama }}</h1>
+<h1 class="h3">Edit Guru <strong>{{ $edit_guru->Nama }}</strong></h1>
   <form action="{{ route('guru.update', $edit_guru->id) }}" method="post">
     {{ csrf_field() }} {{ method_field('PUT') }}
     <div class="form-row mb-2">
@@ -66,7 +66,7 @@
       <textarea name="Alamat" rows="5" class="form-control" placeholder="Alamat Guru">{{ $edit_guru->Alamat }}</textarea>
     </div>
     <div class="form-row justify-content-between align-items-center">
-      <a href="" class="btn btn-link text-danger">Cancel</a>
+      <a href="{{ url()->previous() }}" class="btn btn-link text-danger">Cancel</a>
       <button type="submit" class="btn btn-success float-right" name="button">Update Info Guru</button>
     </div>
   </form>

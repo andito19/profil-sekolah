@@ -2,7 +2,7 @@
 @section('title', 'List Guru')
 @section('content')
 
-<h1 class="h3">List Guru <a href="{{ route('guru.create') }}" class="btn float-right">Tambah Guru</a></h1>
+<h1 class="h3">List Guru <a href="{{ route('guru.create') }}" class="btn btn-info float-right">Tambah Guru</a></h1>
 <table class="table">
     <thead>
         <tr>
@@ -32,5 +32,7 @@
         @endforeach
     </tbody>
 </table>
+
+{{ $list_guru->links("vendor.pagination.bootstrap-4") }}
 
 @endsection
