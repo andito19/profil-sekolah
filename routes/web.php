@@ -51,7 +51,7 @@ Route::group(['prefix'=>'pengumuman','as'=>'pengumuman'],function(){
 
 
 
-Route::group(['prefix'=>'staff','as'=>'staff'],function(){
+Route::group(['prefix'=>'staff','as'=>'staff.'],function(){
 	Route::get('/','StaffController@index')->name('index');
 	Route::get('/create','StaffController@create')->name('create');
 	Route::post('save','StaffController@save')->name('save');

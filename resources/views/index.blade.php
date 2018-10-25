@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Profil Sekolah
+    Profil Sekolah | @yield('title')
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
   <link href="{{asset('template/dashboard/assets/css/material-dashboard.css?v=2.1.0')}}" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ asset('css/datepicker.min.css') }}">
 </head>
 
 <body class="">
@@ -95,7 +96,7 @@
       <!-- End Navbar -->
       <div class="content">
         <div class="container-fluid">
-          <!-- your content here -->
+          @yield('content')
         </div>
       </div>
     </div>
@@ -105,14 +106,13 @@
   <script src="{{asset('template/dashboard/assets/js/core/popper.min.js" type="text/javascript')}}"></script>
   <script src="{{asset('template/dashboard/assets/js/core/bootstrap-material-design.min.js')}}" type="text/javascript"></script>
   <script src="{{asset('template/dashboard/assets/js/plugins/perfect-scrollbar.jquery.min.js')}}"></script>
-  <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
   <!-- Chartist JS -->
   <script src="{{asset('template/dashboard/assets/js/plugins/chartist.min.js')}}"></script>
   <!--  Notifications Plugin    -->
   <script src="{{asset('template/dasboard/assets/js/plugins/bootstrap-notify.js')}}"></script>
   <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="{{asset('template/dashboard/assets/js/material-dashboard.min.js?v=2.1.0')}}" type="text/javascript"></script>
+  <script src="{{ asset('js/datepicker.min.js') }}" charset="utf-8"></script>
 </body>
 
 </html>
