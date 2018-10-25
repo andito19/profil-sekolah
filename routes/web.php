@@ -81,7 +81,7 @@ Route::group(['prefix'=>'siswa','as'=>'siswa'],function(){
 	Route::get('/','SiswaController@index')->name('index');
 	Route::get('/create','SiswaController@create')->name('create');
 	Route::post('save','SiswaController@save')->name('save');
-	Route::get('/edit/{id}','SiswaKelasController@edit')->name('edit');
+	Route::get('/edit/{id}','SiswaController@edit')->name('edit');
 	Route::post('/update','SiswaController@update')->name('update');
 	Route::get('/delete','SiswaController@delete')->name('delete');
 });

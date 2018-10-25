@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Guru;
 
 class GuruController extends Controller
 {
@@ -13,7 +14,8 @@ class GuruController extends Controller
      */
     public function index()
     {
-        return view('guru.list');
+        $list_guru = Guru::paginate(5);
+        return view('guru.list', compact('list_guru'));
     }
 
     /**
@@ -23,7 +25,7 @@ class GuruController extends Controller
      */
     public function create()
     {
-        //
+        return view('guru.create');
     }
 
     /**
@@ -34,7 +36,16 @@ class GuruController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      $flight = new Guru;
+      $flight->Nip = $request->Nip;
+      $flight->Nama = $request->Nama;
+      $flight->Tempat_lahir = $request->Tempat_lahir;
+      $flight->Tgl_lahir = $request->Tgl_lahir;
+      $flight->Jk = $request->Jk;
+      $flight->Alamat = $request->Alamat;
+
+      $flight->save();
+      return redirect()->route('guru.index');
     }
 
     /**
@@ -56,7 +67,8 @@ class GuruController extends Controller
      */
     public function edit($id)
     {
-        //
+        $edit_guru = Guru::findOrFail($id);
+        return view('guru.edit', compact('edit_guru'));
     }
 
     /**
@@ -68,7 +80,16 @@ class GuruController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $update_guru = Guru::findOrFail($id);
+        $update_guru->Nip = $request->Nip;
+        $update_guru->Nama = $request->Nama;
+        $update_guru->Tempat_lahir = $request->Tempat_lahir;
+        $update_guru->Tgl_lahir = $request->Tgl_lahir;
+        $update_guru->Jk = $request->Jk;
+        $update_guru->Alamat = $request->Alamat;
+
+        $update_guru->save();
+        return redirect()->route('guru.index');
     }
 
     /**
@@ -79,6 +100,9 @@ class GuruController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $delete_guru = Guru::findOrFail($id);
+        $delete_guru->delete();
+
+        return redirect()->back();
     }
 }
