@@ -79,7 +79,6 @@
       </div>
     </div>
     <div class="main-panel">
-      <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">
           
@@ -92,10 +91,62 @@
           
         </div>
       </nav>
-      <!-- End Navbar -->
       <div class="content">
         <div class="container-fluid">
-          <!-- your content here -->
+          <div class="row">
+            <div class="col-md-12">
+            <a href="{{ route('acara.create') }}" class="btn btn-primary btn-round"><i class="fa fa-add" aria-hidden="true"></i> Tambah Acara</a>
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title ">Daftar Acara</h4>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead class=" text-primary">
+                        <th>
+                          Judul
+                        </th>
+                        <th>
+                          Deksripsi
+                        </th>
+                        <th>
+                          Tanggal
+                        </th>
+                        <th>
+                          Action
+                        </th>
+                      </thead>
+                      <tbody>
+                      @if(isset($acaras))
+                      @foreach($acaras as $acara)
+                        <form action="{{ route('acara.deleted') }}" method="POST">
+                        {{ csrf_field() }}
+                        <tr>
+                        <input type="hidden" name="idacara" value="{{$acara->Id}}">
+                          <td>
+                            {{ $acara->Judul }}
+                          </td>
+                          <td>
+                            {{ $acara->Deskripsi }}
+                          </td>
+                          <td>
+                            {{ $acara->created_at }}
+                          </td>
+                          <td>
+                          <button type="submit" class="btn btn-danger">Hapus</button>  
+                          <a href="{{ route('acara.edit', ['Id' => $acara->Id]) }}" class="btn btn-success">Edit</a>
+                          </td>
+                        </tr>
+                        @endforeach
+                        @endif
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
