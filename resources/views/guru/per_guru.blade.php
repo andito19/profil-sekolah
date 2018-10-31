@@ -16,7 +16,7 @@
     </div>
   </div>
   <div class="row">
-    <p class="col"><a href="{{ url()->previous() }}" class="text-info">Back To Previous</a></p>
+    <p class="col"><a href="{{ url()->previous() }}" class="text-info"><i class='bx bx-arrow-back'></i> Back To Previous</a></p>
   </div>
 </div>
 

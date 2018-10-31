@@ -16,6 +16,7 @@
   <!-- CSS Files -->
   <link href="{{asset('template/dashboard/assets/css/material-dashboard.css?v=2.1.0')}}" rel="stylesheet" />
   <link rel="stylesheet" href="{{ asset('css/datepicker.min.css') }}">
+  <link href='https://unpkg.com/boxicons@1.7.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body class="">

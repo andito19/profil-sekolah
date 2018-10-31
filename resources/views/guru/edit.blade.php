@@ -7,7 +7,7 @@
     {{ csrf_field() }} {{ method_field('PUT') }}
     <div class="form-row mb-2">
       <div class="form-group col">
-        <input type="number" min="0" maxlength="5" class="form-control" name="Nip" placeholder="NIP Guru" value="{{ $edit_guru->Nip }}">
+        <input type="number" min="0" max="999999999999" class="form-control" name="Nip" placeholder="NIP Guru" value="{{ $edit_guru->Nip }}">
       </div>
       <div class="form-group col">
         <input type="text" name="Nama" class="form-control" placeholder="Nama Guru" value="{{ $edit_guru->Nama }}">

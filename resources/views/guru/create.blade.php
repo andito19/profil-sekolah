@@ -7,7 +7,7 @@
   {{ csrf_field() }}
   <div class="form-row mb-2">
     <div class="form-group col">
-      <input type="number" min="0" class="form-control" name="Nip" placeholder="NIP Guru">
+      <input type="number" min="0" max="999999999999" class="form-control" name="Nip" placeholder="NIP Guru">
     </div>
     <div class="form-group col">
       <input type="text" name="Nama" class="form-control" placeholder="Nama Guru">
