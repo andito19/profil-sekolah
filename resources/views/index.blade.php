@@ -35,7 +35,7 @@
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="nav-item active  ">
-            <a class="nav-link" href="#0">
+            <a class="nav-link" href="">
               <i class="fa fa-file-text-o" aria-hidden="true"></i>
               <p>Data Siswa</p>
             </a>
@@ -47,7 +47,7 @@
             </a>
           </li>
           <li class="nav-item active  ">
-            <a class="nav-link" href="#0">
+            <a class="nav-link" href="{{ route('guru.index') }}">
               <i class="fa fa-file-text-o" aria-hidden="true"></i>
               <p>Data Guru</p>
             </a>
