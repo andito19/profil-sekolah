@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Staff;
+use App\staff;
 use Illuminate\Http\Request;
 
 
@@ -11,9 +11,9 @@ class StaffController extends Controller
     public function index()
     {
     	  
-    	$data['staff'] = Staff::all();
+    	$staff = staff::all();
     	// dd($staff);
-    	return view('Staff.index', $data);
+    	return view('Staff.index', compact('staff'));
    
     }
     public function create()
@@ -25,7 +25,8 @@ class StaffController extends Controller
     	$Staff = new Staff;
         $Staff->Nip = $r->Nip;
         $Staff->Nama = $r->Nama;
-        $Staff->TTL = $r->TTL;
+        $Staff->Tempat = $r->Tempat;
+        $Staff->Tgl_lahir = $r->Tgl_lahir;
         $Staff->JK = $r->JK;
         $Staff->Alamat = $r->Alamat;
         $Staff->Jabatan = $r->Jabatan;
@@ -45,7 +46,8 @@ class StaffController extends Controller
 
 		$staff->Nip = $r->input('Nip');
 		$staff->Nama = $r->input('Nama');
-		$staff->TTL = $r->input('TTL');
+		$staff->Tempat = $r->input('Tempat');
+        $staff->Tgl_lahir = $r->input('Tgl_lahir');
 		$staff->JK = $r->input('JK');
 		$staff->Alamat = $r->input('Alamat');
 		$staff->Jabatan = $r->input('Jabatan');
