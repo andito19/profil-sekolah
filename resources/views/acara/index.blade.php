@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Profil Sekolah | @yield('title')
+    Profil Sekolah 
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
   <link href="{{asset('template/dashboard/assets/css/material-dashboard.css?v=2.1.0')}}" rel="stylesheet" />
-  <link rel="stylesheet" href="{{ asset('css/datepicker.min.css') }}">
 </head>
 
 <body class="">
@@ -80,23 +79,74 @@
       </div>
     </div>
     <div class="main-panel">
-      <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">
-
+          
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
             <span class="navbar-toggler-icon icon-bar"></span>
             <span class="navbar-toggler-icon icon-bar"></span>
             <span class="navbar-toggler-icon icon-bar"></span>
           </button>
-
+          
         </div>
       </nav>
-      <!-- End Navbar -->
       <div class="content">
         <div class="container-fluid">
-          @yield('content')
+          <div class="row">
+            <div class="col-md-12">
+            <a href="{{ route('acara.create') }}" class="btn btn-primary btn-round"><i class="fa fa-add" aria-hidden="true"></i> Tambah Acara</a>
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title ">Daftar Acara</h4>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead class=" text-primary">
+                        <th>
+                          Judul
+                        </th>
+                        <th>
+                          Deksripsi
+                        </th>
+                        <th>
+                          Tanggal
+                        </th>
+                        <th>
+                          Action
+                        </th>
+                      </thead>
+                      <tbody>
+                      @if(isset($acaras))
+                      @foreach($acaras as $acara)
+                        <form action="{{ route('acara.deleted') }}" method="POST">
+                        {{ csrf_field() }}
+                        <tr>
+                        <input type="hidden" name="idacara" value="{{$acara->Id}}">
+                          <td>
+                            {{ $acara->Judul }}
+                          </td>
+                          <td>
+                            {{ $acara->Deskripsi }}
+                          </td>
+                          <td>
+                            {{ $acara->created_at }}
+                          </td>
+                          <td>
+                          <button type="submit" class="btn btn-danger">Hapus</button>  
+                          <a href="{{ route('acara.edit', ['Id' => $acara->Id]) }}" class="btn btn-success">Edit</a>
+                          </td>
+                        </tr>
+                        @endforeach
+                        @endif
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -106,13 +156,14 @@
   <script src="{{asset('template/dashboard/assets/js/core/popper.min.js" type="text/javascript')}}"></script>
   <script src="{{asset('template/dashboard/assets/js/core/bootstrap-material-design.min.js')}}" type="text/javascript"></script>
   <script src="{{asset('template/dashboard/assets/js/plugins/perfect-scrollbar.jquery.min.js')}}"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
   <!-- Chartist JS -->
   <script src="{{asset('template/dashboard/assets/js/plugins/chartist.min.js')}}"></script>
   <!--  Notifications Plugin    -->
   <script src="{{asset('template/dasboard/assets/js/plugins/bootstrap-notify.js')}}"></script>
   <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="{{asset('template/dashboard/assets/js/material-dashboard.min.js?v=2.1.0')}}" type="text/javascript"></script>
-  <script src="{{ asset('js/datepicker.min.js') }}" charset="utf-8"></script>
 </body>
 
 </html>

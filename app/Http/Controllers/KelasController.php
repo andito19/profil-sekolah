@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+<<<<<<< HEAD
 use App\Kelas;
 
 class KelasController extends Controller
@@ -46,4 +47,10 @@ class KelasController extends Controller
 		$kelas->delete();
      	return redirect()->route('kelas.index');
     }
+=======
+
+class KelasController extends Controller
+{
+    //
+>>>>>>> acara
 }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+<<<<<<< HEAD
 use App\Staff;
 use Illuminate\Http\Request;
 
@@ -61,4 +62,11 @@ class StaffController extends Controller
 		$staff->delete();
      	return redirect()->route('staff.index');
     }
+=======
+use Illuminate\Http\Request;
+
+class StaffController extends Controller
+{
+    //
+>>>>>>> acara
 }
