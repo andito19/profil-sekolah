@@ -29,7 +29,7 @@ Route::group(['prefix'=>'kelas','as'=>'kelas.'],function(){
 });
 
 
-Route::group(['prefix'=>'prestasi','as'=>'prestasi'],function(){
+Route::group(['prefix'=>'prestasi','as'=>'prestasi.'],function(){
 	Route::get('/','PrestasiController@index')->name('index');
 	Route::get('/create','PrestasiController@create')->name('create');
 	Route::post('save','PrestasiController@save')->name('save');
@@ -39,7 +39,7 @@ Route::group(['prefix'=>'prestasi','as'=>'prestasi'],function(){
 });
 
 
-Route::group(['prefix'=>'pengumuman','as'=>'pengumuman'],function(){
+Route::group(['prefix'=>'pengumuman','as'=>'pengumuman.'],function(){
 	Route::get('/','PengumumanController@index')->name('index');
 	Route::get('/create','PengumumanController@create')->name('create');
 	Route::post('save','PengumumanController@save')->name('save');
@@ -50,7 +50,7 @@ Route::group(['prefix'=>'pengumuman','as'=>'pengumuman'],function(){
 
 
 
-Route::group(['prefix'=>'staff','as'=>'staff'],function(){
+Route::group(['prefix'=>'staff','as'=>'staff.'],function(){
 	Route::get('/','StaffController@index')->name('index');
 	Route::get('/create','StaffController@create')->name('create');
 	Route::post('save','StaffController@save')->name('save');
@@ -61,7 +61,7 @@ Route::group(['prefix'=>'staff','as'=>'staff'],function(){
 
 
 
-Route::group(['prefix'=>'acara','as'=>'acara'],function(){
+Route::group(['prefix'=>'acara','as'=>'acara.'],function(){
 	Route::get('/','AcaraController@index')->name('index');
 	Route::get('/create','AcaraController@create')->name('create');
 	Route::post('save','AcaraController@save')->name('save');
@@ -73,7 +73,7 @@ Route::group(['prefix'=>'acara','as'=>'acara'],function(){
 
 
 
-Route::group(['prefix'=>'guru','as'=>'guru'],function(){
+Route::group(['prefix'=>'guru','as'=>'guru.'],function(){
 	Route::get('/','GuruController@index')->name('index');
 	Route::get('/create','GuruController@create')->name('create');
 	Route::post('save','GuruController@save')->name('save');
@@ -83,7 +83,7 @@ Route::group(['prefix'=>'guru','as'=>'guru'],function(){
 });
 
 
-Route::group(['prefix'=>'siswa','as'=>'siswa'],function(){
+Route::group(['prefix'=>'siswa','as'=>'siswa.'],function(){
 	Route::get('/','SiswaController@index')->name('index');
 	Route::get('/create','SiswaController@create')->name('create');
 	Route::post('save','SiswaController@save')->name('save');
