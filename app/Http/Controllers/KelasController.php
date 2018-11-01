@@ -9,7 +9,7 @@ class KelasController extends Controller
 {
     public function index()
     {
-    	$kelas = Kelas::all();
+    	$kelas = Kelas::paginate(5);
     	return view('Kelas.index', compact('kelas'));
     }
     public function create()
@@ -19,6 +19,7 @@ class KelasController extends Controller
     public function save(Request $r)
     {
     	$Kelas = new Kelas;
+    	$Kelas->wali_kelas = $r->wali_kelas;
         $Kelas->nama_kelas = $r->nama_kelas;
         $Kelas->save();
 
@@ -33,7 +34,8 @@ class KelasController extends Controller
     {
     	$kelas = kelas::find($r->input('id'));
 
-		$kelas->nama_kelas = $r->input('kelas');
+    	$kelas->wali_kelas = $r->input('wali_kelas');
+		$kelas->nama_kelas = $r->input('nama_kelas');
 
 		$kelas->save();
 		return redirect()->route('kelas.index');
