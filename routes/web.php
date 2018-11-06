@@ -57,7 +57,7 @@ Route::group(['prefix'=>'staff','as'=>'staff.'],function(){
 	Route::post('save','StaffController@save')->name('save');
 	Route::get('/edit/{id}','StaffController@edit')->name('edit');
 	Route::post('/update','StaffController@update')->name('update');
-	Route::get('/delete','StaffController@delete')->name('delete');
+	Route::get('/delete/{id}','StaffController@delete')->name('delete');
 });
 
 Route::group(['prefix'=>'acara','as'=>'acara.'],function(){
