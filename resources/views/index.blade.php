@@ -8,6 +8,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
     Profil Sekolah | @yield('title')
+    @yield('title') | Profil Sekolah 
+
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -41,7 +43,7 @@
             </a>
           </li>
           <li class="nav-item active  ">
-            <a class="nav-link" href="#0">
+            <a class="nav-link" href="{{route('kelas.index')}}">
              <i class="fa fa-file-text-o" aria-hidden="true"></i>
               <p>Data Kelas</p>
             </a>

@@ -11,14 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/', 'welcome');
 
 Route::get('/index', function () {
     return view('index');
 });
-
 
 Route::group(['prefix'=>'kelas','as'=>'kelas.'],function(){
 	Route::get('/','KelasController@index')->name('index');
@@ -27,6 +24,7 @@ Route::group(['prefix'=>'kelas','as'=>'kelas.'],function(){
 	Route::get('/edit/{id}','KelasController@edit')->name('edit');
 	Route::post('/update','KelasController@update')->name('update');
 	Route::get('/delete','KelasController@delete')->name('delete');
+	Route::get('/delete/{id}','KelasController@delete')->name('delete');	
 });
 
 
