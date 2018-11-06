@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use Illuminate\Support\Facades\DB;
 use App\Acara;
 
@@ -33,10 +34,10 @@ class AcaraController extends Controller
 
     }
     public function editSave(Request $r){
-        // $judul = $r->judulacara;
-        // $deskripsi = $r->deskripsiacara;
-        // $data = Acara::where('Id', '=', $r->Idacara)->update(['Judul' => $judul],['Deskripsi' => $deskripsi]);
-        // return view('acara.index');
+        $judul = $r->judulacara;
+        $deskripsi = $r->deskripsiacara;
+        $data = Acara::where('Id', '=', $r->Idacara)->update(['Judul' => $judul],['Deskripsi' => $deskripsi]);
+        return view('acara.index');
         DB::table('acaras')->where('Id', $r->input('idacara'))->update(
             ['Judul' => $r->input('judulacara'),
             'Deskripsi' => $r->input('deskripsiacara')

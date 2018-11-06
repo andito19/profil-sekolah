@@ -60,38 +60,6 @@ Route::group(['prefix'=>'staff','as'=>'staff.'],function(){
 	Route::get('/delete','StaffController@delete')->name('delete');
 });
 
-
-Route::group(['prefix'=>'acara','as'=>'acara.'],function(){
-	Route::get('/','AcaraController@index')->name('index');
-	Route::get('/create','AcaraController@create')->name('create');
-	Route::post('save','AcaraController@save')->name('save');
-	Route::get('/edit/{id}','AcaraController@edit')->name('edit');
-	Route::post('/update','AcaraController@update')->name('update');
-	Route::get('/delete','AcaraController@delete')->name('delete');
-});
-
-
-
-
-Route::group(['prefix'=>'guru','as'=>'guru.'],function(){
-
-	Route::get('/','GuruController@index')->name('index');
-	Route::get('/create','GuruController@create')->name('create');
-	Route::post('save','GuruController@save')->name('save');
-	Route::get('/edit/{id}','GuruController@edit')->name('edit');
-	Route::post('/update','GuruController@update')->name('update');
-	Route::get('/delete','GuruController@delete')->name('delete');
-});
-
-Route::group(['prefix'=>'siswa','as'=>'siswa.'],function(){
-	Route::get('/','SiswaController@index')->name('index');
-		Route::get('/create','SiswaController@create')->name('create');
-	Route::post('save','SiswaController@save')->name('save');
-	Route::get('/edit/{id}','SiswaController@edit')->name('edit');
-	Route::post('/update','SiswaController@update')->name('update');
-	Route::get('/delete','SiswaController@delete')->name('delete');	
-});
-
 Route::group(['prefix'=>'acara','as'=>'acara.'],function(){
 	Route::get('/','AcaraController@index')->name('index');
 	Route::get('/create','AcaraController@create')->name('create');
@@ -102,6 +70,23 @@ Route::group(['prefix'=>'acara','as'=>'acara.'],function(){
 	Route::get('/delete','AcaraController@delete')->name('delete');
 	Route::post('/acara/delete','AcaraController@deleteAcara')->name('deleted');	
 });
+
+
+Route::resource('guru', 'GuruController');
+
+
+Route::group(['prefix'=>'siswa','as'=>'siswa.'],function(){
+	Route::get('/','SiswaController@index')->name('index');
+		Route::get('/create','SiswaController@create')->name('create');
+	Route::post('save','SiswaController@save')->name('save');
+	Route::get('/edit/{id}','SiswaController@edit')->name('edit');
+	Route::post('/update','SiswaController@update')->name('update');
+	Route::get('/delete','SiswaController@delete')->name('delete');	
+});
+
+
+
+
 
 
 

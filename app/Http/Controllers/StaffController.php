@@ -11,11 +11,11 @@ class StaffController extends Controller
 {
     public function index()
     {
-    	  
+
     	$data['staff'] = Staff::all();
     	// dd($staff);
     	return view('Staff.index', $data);
-   
+
     }
     public function create()
     {
