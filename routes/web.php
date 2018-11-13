@@ -23,8 +23,7 @@ Route::group(['prefix'=>'kelas','as'=>'kelas.'],function(){
 	Route::post('save','KelasController@save')->name('save');
 	Route::get('/edit/{id}','KelasController@edit')->name('edit');
 	Route::post('/update','KelasController@update')->name('update');
-	Route::get('/delete','KelasController@delete')->name('delete');
-	Route::get('/delete/{id}','KelasController@delete')->name('delete');	
+	Route::get('/delete/{id}','KelasController@delete')->name('delete');
 });
 
 
@@ -75,16 +74,9 @@ Route::resource('guru', 'GuruController');
 
 Route::group(['prefix'=>'siswa','as'=>'siswa.'],function(){
 	Route::get('/','SiswaController@index')->name('index');
-		Route::get('/create','SiswaController@create')->name('create');
+	Route::get('/create','SiswaController@create')->name('create');
 	Route::post('save','SiswaController@save')->name('save');
 	Route::get('/edit/{id}','SiswaController@edit')->name('edit');
 	Route::post('/update','SiswaController@update')->name('update');
-	Route::get('/delete','SiswaController@delete')->name('delete');	
+	Route::get('/delete/{id}','SiswaController@delete')->name('delete');
 });
-
-
-
-
-
-
-

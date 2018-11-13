@@ -37,7 +37,7 @@
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="nav-item active  ">
-            <a class="nav-link" href="">
+            <a class="nav-link" href="{{route('siswa.index')}}">
               <i class="fa fa-file-text-o" aria-hidden="true"></i>
               <p>Data Siswa</p>
             </a>
