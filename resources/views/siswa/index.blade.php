@@ -21,8 +21,8 @@
           <td>{{$siswa->jenis_kelamin}}</td>
           <td>{{$siswa->ttl}}</td>
           <td>
-            <a href="{{route('siswaedit',['id'=>$siswa->id])}}" class="btn btn-warning">Edit</a>
-            <a href="{{route('siswadelete',['id'=>$siswa->id])}}" class="btn btn-danger">Delete</a>
+            <a href="{{route('siswa.edit',['id'=>$siswa->id])}}" class="btn btn-warning">Edit</a>
+            <a href="{{route('siswa.delete',['id'=>$siswa->id])}}" class="btn btn-danger">Delete</a>
           </td>
         </tr>
       @endforeach
