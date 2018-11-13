@@ -40,14 +40,7 @@ Route::group(['prefix'=>'prestasi','as'=>'prestasi.'],function(){
 });
 
 
-Route::group(['prefix'=>'pengumuman','as'=>'pengumuman.'],function(){
-	Route::get('/','PengumumanController@index')->name('index');
-	Route::get('/create','PengumumanController@create')->name('create');
-	Route::post('save','PengumumanController@save')->name('save');
-	Route::get('/edit/{id}','PengumumanController@edit')->name('edit');
-	Route::post('/update','PengumumanController@update')->name('update');
-	Route::get('/delete','PengumumanController@delete')->name('delete');
-});
+Route::resource('pengumuman', 'PengumumanController');
 
 
 
@@ -102,6 +95,3 @@ Route::group(['prefix'=>'acara','as'=>'acara.'],function(){
 	Route::get('/delete','AcaraController@delete')->name('delete');
 	Route::post('/acara/delete','AcaraController@deleteAcara')->name('deleted');	
 });
-
-
-
