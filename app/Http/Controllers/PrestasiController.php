@@ -8,6 +8,7 @@ use App\Prestasi;
 
 class PrestasiController extends Controller
 {
+    
     public function index(){
     	$data['prestasis'] = DB::table('prestasis')->orderBy('id', 'desc')->get();
     	return view('prestasi.index',$data);
