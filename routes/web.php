@@ -11,14 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/', 'welcome');
 
 Route::get('/index', function () {
     return view('index');
 });
-
 
 Route::group(['prefix'=>'kelas','as'=>'kelas.'],function(){
 	Route::get('/','KelasController@index')->name('index');
@@ -26,7 +23,7 @@ Route::group(['prefix'=>'kelas','as'=>'kelas.'],function(){
 	Route::post('save','KelasController@save')->name('save');
 	Route::get('/edit/{id}','KelasController@edit')->name('edit');
 	Route::post('/update','KelasController@update')->name('update');
-	Route::get('/delete','KelasController@delete')->name('delete');
+	Route::get('/delete/{id}','KelasController@delete')->name('delete');
 });
 
 
@@ -50,35 +47,27 @@ Route::group(['prefix'=>'staff','as'=>'staff.'],function(){
 	Route::post('save','StaffController@save')->name('save');
 	Route::get('/edit/{id}','StaffController@edit')->name('edit');
 	Route::post('/update','StaffController@update')->name('update');
-	Route::get('/delete','StaffController@delete')->name('delete');
+	Route::get('/delete/{id}','StaffController@delete')->name('delete');
 });
-
 
 Route::group(['prefix'=>'acara','as'=>'acara.'],function(){
 	Route::get('/','AcaraController@index')->name('index');
 	Route::get('/create','AcaraController@create')->name('create');
 	Route::post('save','AcaraController@save')->name('save');
 	Route::get('/edit/{id}','AcaraController@edit')->name('edit');
+	Route::post('/acara/edit/','AcaraController@editSave')->name('editsave');
 	Route::post('/update','AcaraController@update')->name('update');
 	Route::get('/delete','AcaraController@delete')->name('delete');
+	Route::post('/acara/delete','AcaraController@deleteAcara')->name('deleted');	
 });
 
 
+Route::resource('guru', 'GuruController');
 
-
-Route::group(['prefix'=>'guru','as'=>'guru.'],function(){
-
-	Route::get('/','GuruController@index')->name('index');
-	Route::get('/create','GuruController@create')->name('create');
-	Route::post('save','GuruController@save')->name('save');
-	Route::get('/edit/{id}','GuruController@edit')->name('edit');
-	Route::post('/update','GuruController@update')->name('update');
-	Route::get('/delete','GuruController@delete')->name('delete');
-});
 
 Route::group(['prefix'=>'siswa','as'=>'siswa.'],function(){
 	Route::get('/','SiswaController@index')->name('index');
-		Route::get('/create','SiswaController@create')->name('create');
+	Route::get('/create','SiswaController@create')->name('create');
 	Route::post('save','SiswaController@save')->name('save');
 	Route::get('/edit/{id}','SiswaController@edit')->name('edit');
 	Route::post('/update','SiswaController@update')->name('update');
@@ -93,5 +82,5 @@ Route::group(['prefix'=>'acara','as'=>'acara.'],function(){
 	Route::post('/acara/edit/','AcaraController@editSave')->name('editsave');
 	Route::post('/update','AcaraController@update')->name('update');
 	Route::get('/delete','AcaraController@delete')->name('delete');
-	Route::post('/acara/delete','AcaraController@deleteAcara')->name('deleted');	
+	Route::get('/delete/{id}','SiswaController@delete')->name('delete');	
 });

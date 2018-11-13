@@ -39,19 +39,19 @@
             </a>
           </li>
           <li class="nav-item active  ">
-            <a class="nav-link" href="#0">
+            <a class="nav-link" href="{{route('kelas.index')}}">
              <i class="fa fa-file-text-o" aria-hidden="true"></i>
               <p>Data Kelas</p>
             </a>
           </li>
           <li class="nav-item active  ">
-            <a class="nav-link" href="#0">
+            <a class="nav-link" href="{{ route('guru.index') }}">
               <i class="fa fa-file-text-o" aria-hidden="true"></i>
               <p>Data Guru</p>
             </a>
           </li>
           <li class="nav-item active  ">
-            <a class="nav-link" href="#0">
+            <a class="nav-link" href="{{route('staff.index')}}">
               <i class="fa fa-file-text-o" aria-hidden="true"></i>
               <p>Data Staff</p>
             </a>
