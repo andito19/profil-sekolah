@@ -9,10 +9,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::view('/', 'welcome');
-Route::get('/index', function () {
-    return view('index');
-});
+Route::view('/', 'index');
+
 Route::group(['prefix'=>'kelas','as'=>'kelas.'],function(){
 	Route::get('/','KelasController@index')->name('index');
 	Route::get('/create','KelasController@create')->name('create');
