@@ -36,14 +36,13 @@ class AcaraController extends Controller
         $judul = $r->judulacara;
         $deskripsi = $r->deskripsiacara;
         $data = Acara::where('Id', '=', $r->Idacara)->update(['Judul' => $judul],['Deskripsi' => $deskripsi]);
-        return view('acara.index');
         DB::table('acaras')->where('Id', $r->input('idacara'))->update(
             ['Judul' => $r->input('judulacara'),
             'Deskripsi' => $r->input('deskripsiacara')
             ]
         );
 
-        return redirect()->route('acara.index');
+        return redirect('/');
 
 
     }

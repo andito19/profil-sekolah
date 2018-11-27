@@ -97,7 +97,7 @@
           <div class="col-md-12">
             <div class="card">
               <div class="card-header card-header-primary">
-                <h5 class="card-title">Tambah Acara</h5>
+                <h5 class="card-title">Edit Acara</h5>
               </div>
               <div class="card-body">
                 <form action="{{ route('acara.editsave') }}" method="POST">

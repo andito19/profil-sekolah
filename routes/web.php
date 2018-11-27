@@ -43,8 +43,7 @@ Route::group(['prefix'=>'acara','as'=>'acara.'],function(){
 	Route::get('/create','AcaraController@create')->name('create');
 	Route::post('save','AcaraController@save')->name('save');
 	Route::get('/edit/{id}','AcaraController@edit')->name('edit');
-	Route::post('/acara/edit/','AcaraController@editSave')->name('editsave');
-	Route::post('/update','AcaraController@update')->name('update');
+	Route::post('/update/','AcaraController@editSave')->name('editsave');
 	Route::get('/delete','AcaraController@delete')->name('delete');
 	Route::post('/acara/delete','AcaraController@deleteAcara')->name('deleted');	
 });
