@@ -1,10 +1,16 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
+<<<<<<< HEAD
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "hash": "7f1915ec708986f5c88e22e683d74275",
+=======
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+>>>>>>> prestasi
     "content-hash": "b7904d07d1e1765a0a199aa11d6301a3",
     "packages": [
         {
@@ -38,7 +44,11 @@
                 "MIT"
             ],
             "description": "implementation of xdg base directory specification for php",
+<<<<<<< HEAD
             "time": "2014-10-24 07:27:01"
+=======
+            "time": "2014-10-24T07:27:01+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "doctrine/inflector",
@@ -106,10 +116,14 @@
                 "string"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2018-01-09T20:05:19+00:00"
 =======
             "time": "2017-07-22 12:18:28"
 >>>>>>> kelas
+=======
+            "time": "2018-01-09T20:05:19+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "doctrine/lexer",
@@ -163,7 +177,11 @@
                 "lexer",
                 "parser"
             ],
+<<<<<<< HEAD
             "time": "2014-09-09 13:34:57"
+=======
+            "time": "2014-09-09T13:34:57+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "egulias/email-validator",
@@ -220,7 +238,11 @@
                 "validation",
                 "validator"
             ],
+<<<<<<< HEAD
             "time": "2018-09-25 20:47:26"
+=======
+            "time": "2018-09-25T20:47:26+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "erusev/parsedown",
@@ -266,7 +288,11 @@
                 "markdown",
                 "parser"
             ],
+<<<<<<< HEAD
             "time": "2018-03-08 01:11:30"
+=======
+            "time": "2018-03-08T01:11:30+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "fideloper/proxy",
@@ -323,7 +349,11 @@
                 "proxy",
                 "trusted proxy"
             ],
+<<<<<<< HEAD
             "time": "2017-06-15 17:19:42"
+=======
+            "time": "2017-06-15T17:19:42+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -365,7 +395,11 @@
                     "email": "jakub.onderka@gmail.com"
                 }
             ],
+<<<<<<< HEAD
             "time": "2018-09-29 17:23:10"
+=======
+            "time": "2018-09-29T17:23:10+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "jakub-onderka/php-console-highlighter",
@@ -412,10 +446,14 @@
             ],
             "description": "Highlight PHP code in terminal",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2018-09-29T18:48:56+00:00"
 =======
             "time": "2018-09-29 18:48:56"
 >>>>>>> kelas
+=======
+            "time": "2018-09-29T18:48:56+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "laravel/framework",
@@ -549,7 +587,11 @@
                 "framework",
                 "laravel"
             ],
+<<<<<<< HEAD
             "time": "2018-10-04 14:51:24"
+=======
+            "time": "2018-10-04T14:51:24+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "laravel/tinker",
@@ -613,10 +655,14 @@
                 "psysh"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2018-10-12T19:39:35+00:00"
 =======
             "time": "2018-10-12 19:39:35"
 >>>>>>> kelas
+=======
+            "time": "2018-10-12T19:39:35+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "league/flysystem",
@@ -701,10 +747,14 @@
                 "storage"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2018-10-15T13:53:10+00:00"
 =======
             "time": "2018-10-15 13:53:10"
 >>>>>>> kelas
+=======
+            "time": "2018-10-15T13:53:10+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "monolog/monolog",
@@ -782,7 +832,11 @@
                 "logging",
                 "psr-3"
             ],
+<<<<<<< HEAD
             "time": "2017-06-19 01:22:40"
+=======
+            "time": "2017-06-19T01:22:40+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "mtdowling/cron-expression",
@@ -826,7 +880,11 @@
                 "cron",
                 "schedule"
             ],
+<<<<<<< HEAD
             "time": "2017-01-23 04:29:33"
+=======
+            "time": "2017-01-23T04:29:33+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "nesbot/carbon",
@@ -881,7 +939,11 @@
                 "datetime",
                 "time"
             ],
+<<<<<<< HEAD
             "time": "2018-09-20 19:36:25"
+=======
+            "time": "2018-09-20T19:36:25+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "nikic/php-parser",
@@ -933,10 +995,14 @@
                 "php"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2018-10-10T09:24:14+00:00"
 =======
             "time": "2018-10-10 09:24:14"
 >>>>>>> kelas
+=======
+            "time": "2018-10-10T09:24:14+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "paragonie/random_compat",
@@ -981,7 +1047,11 @@
                 "pseudorandom",
                 "random"
             ],
+<<<<<<< HEAD
             "time": "2018-07-02 15:55:56"
+=======
+            "time": "2018-07-02T15:55:56+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "psr/container",
@@ -1030,7 +1100,11 @@
                 "container-interop",
                 "psr"
             ],
+<<<<<<< HEAD
             "time": "2017-02-14 16:28:37"
+=======
+            "time": "2017-02-14T16:28:37+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "psr/log",
@@ -1077,7 +1151,11 @@
                 "psr",
                 "psr-3"
             ],
+<<<<<<< HEAD
             "time": "2016-10-10 12:19:37"
+=======
+            "time": "2016-10-10T12:19:37+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "psr/simple-cache",
@@ -1125,7 +1203,11 @@
                 "psr-16",
                 "simple-cache"
             ],
+<<<<<<< HEAD
             "time": "2017-10-23 01:57:42"
+=======
+            "time": "2017-10-23T01:57:42+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "psy/psysh",
@@ -1200,10 +1282,14 @@
                 "shell"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2018-10-13T15:16:03+00:00"
 =======
             "time": "2018-10-13 15:16:03"
 >>>>>>> kelas
+=======
+            "time": "2018-10-13T15:16:03+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "ramsey/uuid",
@@ -1285,7 +1371,11 @@
                 "identifier",
                 "uuid"
             ],
+<<<<<<< HEAD
             "time": "2018-07-19 23:38:55"
+=======
+            "time": "2018-07-19T23:38:55+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1344,7 +1434,11 @@
                 "mail",
                 "mailer"
             ],
+<<<<<<< HEAD
             "time": "2018-09-11 07:12:52"
+=======
+            "time": "2018-09-11T07:12:52+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "symfony/console",
@@ -1413,7 +1507,11 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "time": "2018-10-02 16:33:53"
+=======
+            "time": "2018-10-02T16:33:53+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "symfony/css-selector",
@@ -1467,10 +1565,14 @@
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2018-10-02T16:36:10+00:00"
 =======
             "time": "2018-10-02 16:33:53"
 >>>>>>> kelas
+=======
+            "time": "2018-10-02T16:36:10+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "symfony/debug",
@@ -1526,7 +1628,11 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "time": "2018-10-02 16:33:53"
+=======
+            "time": "2018-10-02T16:33:53+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "symfony/event-dispatcher",
@@ -1590,10 +1696,14 @@
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2018-07-26T09:10:45+00:00"
 =======
             "time": "2018-07-26 09:06:28"
 >>>>>>> kelas
+=======
+            "time": "2018-07-26T09:10:45+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "symfony/finder",
@@ -1642,7 +1752,11 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "time": "2018-10-03 08:46:40"
+=======
+            "time": "2018-10-03T08:46:40+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "symfony/http-foundation",
@@ -1696,7 +1810,11 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "time": "2018-10-03 08:48:18"
+=======
+            "time": "2018-10-03T08:48:18+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "symfony/http-kernel",
@@ -1785,11 +1903,19 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "time": "2018-10-03 12:03:34"
         },
         {
             "name": "symfony/polyfill-ctype",
             "version": "v1.10.0",
+=======
+            "time": "2018-10-03T12:03:34+00:00"
+        },
+        {
+            "name": "symfony/polyfill-ctype",
+            "version": "v1.9.0",
+>>>>>>> prestasi
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
@@ -1843,6 +1969,7 @@
                 "polyfill",
                 "portable"
             ],
+<<<<<<< HEAD
             "time": "2018-08-06 14:22:27"
         },
         {
@@ -1857,6 +1984,22 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/c79c051f5b3a46be09205c73b80b346e4153e494",
                 "reference": "c79c051f5b3a46be09205c73b80b346e4153e494",
+=======
+            "time": "2018-08-06T14:22:27+00:00"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "d0cd638f4634c16d8df4508e847f14e9e43168b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/d0cd638f4634c16d8df4508e847f14e9e43168b8",
+                "reference": "d0cd638f4634c16d8df4508e847f14e9e43168b8",
+>>>>>>> prestasi
                 "shasum": ""
             },
             "require": {
@@ -1903,6 +2046,7 @@
                 "shim"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2018-09-21T13:07:52+00:00"
 =======
             "time": "2018-08-06 14:22:27"
@@ -1920,6 +2064,22 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/polyfill-php70/zipball/6b88000cdd431cd2e940caa2cb569201f3f84224",
                 "reference": "6b88000cdd431cd2e940caa2cb569201f3f84224",
+=======
+            "time": "2018-08-06T14:22:27+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php70",
+            "version": "v1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php70.git",
+                "reference": "1e24b0c4a56d55aaf368763a06c6d1c7d3194934"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php70/zipball/1e24b0c4a56d55aaf368763a06c6d1c7d3194934",
+                "reference": "1e24b0c4a56d55aaf368763a06c6d1c7d3194934",
+>>>>>>> prestasi
                 "shasum": ""
             },
             "require": {
@@ -1966,10 +2126,14 @@
                 "shim"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2018-09-21T06:26:08+00:00"
 =======
             "time": "2018-08-06 14:22:27"
 >>>>>>> kelas
+=======
+            "time": "2018-08-06T14:22:27+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "symfony/process",
@@ -2018,7 +2182,11 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "time": "2018-10-02 12:28:39"
+=======
+            "time": "2018-10-02T12:28:39+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "symfony/routing",
@@ -2095,7 +2263,11 @@
                 "uri",
                 "url"
             ],
+<<<<<<< HEAD
             "time": "2018-10-02 12:28:39"
+=======
+            "time": "2018-10-02T12:28:39+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "symfony/translation",
@@ -2165,10 +2337,14 @@
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2018-10-02T16:36:10+00:00"
 =======
             "time": "2018-10-02 16:33:53"
 >>>>>>> kelas
+=======
+            "time": "2018-10-02T16:36:10+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "symfony/var-dumper",
@@ -2237,7 +2413,11 @@
                 "debug",
                 "dump"
             ],
+<<<<<<< HEAD
             "time": "2018-10-02 16:33:53"
+=======
+            "time": "2018-10-02T16:33:53+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -2284,7 +2464,11 @@
             ],
             "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
             "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles",
+<<<<<<< HEAD
             "time": "2017-11-27 11:13:29"
+=======
+            "time": "2017-11-27T11:13:29+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "vlucas/phpdotenv",
@@ -2334,7 +2518,11 @@
                 "env",
                 "environment"
             ],
+<<<<<<< HEAD
             "time": "2018-07-29 20:33:41"
+=======
+            "time": "2018-07-29T20:33:41+00:00"
+>>>>>>> prestasi
         }
     ],
     "packages-dev": [
@@ -2391,6 +2579,7 @@
                 "instantiate"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2017-07-22T11:58:36+00:00"
 =======
             "time": "2015-06-14 21:17:01"
@@ -2408,6 +2597,22 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/filp/whoops/zipball/bc0fd11bc455cc20ee4b5edabc63ebbf859324c7",
                 "reference": "bc0fd11bc455cc20ee4b5edabc63ebbf859324c7",
+=======
+            "time": "2017-07-22T11:58:36+00:00"
+        },
+        {
+            "name": "filp/whoops",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filp/whoops.git",
+                "reference": "a9f129b99df316f847584d482c89c14a9f796e2b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/a9f129b99df316f847584d482c89c14a9f796e2b",
+                "reference": "a9f129b99df316f847584d482c89c14a9f796e2b",
+>>>>>>> prestasi
                 "shasum": ""
             },
             "require": {
@@ -2456,10 +2661,14 @@
                 "whoops"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2018-10-23T09:00:00+00:00"
 =======
             "time": "2018-10-23 09:00:00"
 >>>>>>> kelas
+=======
+            "time": "2018-10-20T09:00:00+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "fzaninotto/faker",
@@ -2509,7 +2718,11 @@
                 "faker",
                 "fixtures"
             ],
+<<<<<<< HEAD
             "time": "2018-07-12 10:23:15"
+=======
+            "time": "2018-07-12T10:23:15+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "hamcrest/hamcrest-php",
@@ -2557,7 +2770,11 @@
             "keywords": [
                 "test"
             ],
+<<<<<<< HEAD
             "time": "2016-01-20 08:20:44"
+=======
+            "time": "2016-01-20T08:20:44+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "mockery/mockery",
@@ -2622,7 +2839,11 @@
                 "test double",
                 "testing"
             ],
+<<<<<<< HEAD
             "time": "2018-10-02 21:52:37"
+=======
+            "time": "2018-10-02T21:52:37+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "myclabs/deep-copy",
@@ -2671,10 +2892,14 @@
                 "object graph"
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2018-06-11T23:09:50+00:00"
 =======
             "time": "2017-10-19 19:58:43"
 >>>>>>> kelas
+=======
+            "time": "2018-06-11T23:09:50+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "phar-io/manifest",
@@ -2729,7 +2954,11 @@
                 }
             ],
             "description": "Component for reading phar.io manifest information from a PHP Archive (PHAR)",
+<<<<<<< HEAD
             "time": "2017-03-05 18:14:27"
+=======
+            "time": "2017-03-05T18:14:27+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "phar-io/version",
@@ -2776,7 +3005,11 @@
                 }
             ],
             "description": "Library for handling version information and constraints",
+<<<<<<< HEAD
             "time": "2017-03-05 17:38:23"
+=======
+            "time": "2017-03-05T17:38:23+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -2830,7 +3063,11 @@
                 "reflection",
                 "static analysis"
             ],
+<<<<<<< HEAD
             "time": "2017-09-11 18:02:19"
+=======
+            "time": "2017-09-11T18:02:19+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -2881,7 +3118,11 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
+<<<<<<< HEAD
             "time": "2017-11-30 07:14:17"
+=======
+            "time": "2017-11-30T07:14:17+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -2928,7 +3169,11 @@
                     "email": "me@mikevanriel.com"
                 }
             ],
+<<<<<<< HEAD
             "time": "2017-07-14 14:27:02"
+=======
+            "time": "2017-07-14T14:27:02+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "phpspec/prophecy",
@@ -2991,7 +3236,11 @@
                 "spy",
                 "stub"
             ],
+<<<<<<< HEAD
             "time": "2018-08-05 17:53:17"
+=======
+            "time": "2018-08-05T17:53:17+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -3054,7 +3303,11 @@
                 "testing",
                 "xunit"
             ],
+<<<<<<< HEAD
             "time": "2018-04-06 15:36:58"
+=======
+            "time": "2018-04-06T15:36:58+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -3101,7 +3354,11 @@
                 "filesystem",
                 "iterator"
             ],
+<<<<<<< HEAD
             "time": "2017-11-27 13:52:08"
+=======
+            "time": "2017-11-27T13:52:08+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "phpunit/php-text-template",
@@ -3142,7 +3399,11 @@
             "keywords": [
                 "template"
             ],
+<<<<<<< HEAD
             "time": "2015-06-21 13:50:34"
+=======
+            "time": "2015-06-21T13:50:34+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "phpunit/php-timer",
@@ -3191,7 +3452,11 @@
             "keywords": [
                 "timer"
             ],
+<<<<<<< HEAD
             "time": "2017-02-26 11:10:40"
+=======
+            "time": "2017-02-26T11:10:40+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "phpunit/php-token-stream",
@@ -3240,7 +3505,11 @@
             "keywords": [
                 "tokenizer"
             ],
+<<<<<<< HEAD
             "time": "2017-11-27 05:48:46"
+=======
+            "time": "2017-11-27T05:48:46+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "phpunit/phpunit",
@@ -3324,7 +3593,11 @@
                 "testing",
                 "xunit"
             ],
+<<<<<<< HEAD
             "time": "2018-09-08 15:10:43"
+=======
+            "time": "2018-09-08T15:10:43+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -3383,7 +3656,11 @@
                 "mock",
                 "xunit"
             ],
+<<<<<<< HEAD
             "time": "2018-08-09 05:50:03"
+=======
+            "time": "2018-08-09T05:50:03+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -3428,7 +3705,11 @@
             ],
             "description": "Looks up which function or method a line of code belongs to",
             "homepage": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/",
+<<<<<<< HEAD
             "time": "2017-03-04 06:30:41"
+=======
+            "time": "2017-03-04T06:30:41+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "sebastian/comparator",
@@ -3492,7 +3773,11 @@
                 "compare",
                 "equality"
             ],
+<<<<<<< HEAD
             "time": "2018-02-01 13:46:46"
+=======
+            "time": "2018-02-01T13:46:46+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "sebastian/diff",
@@ -3544,7 +3829,11 @@
             "keywords": [
                 "diff"
             ],
+<<<<<<< HEAD
             "time": "2017-08-03 08:09:46"
+=======
+            "time": "2017-08-03T08:09:46+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "sebastian/environment",
@@ -3594,7 +3883,11 @@
                 "environment",
                 "hhvm"
             ],
+<<<<<<< HEAD
             "time": "2017-07-01 08:51:00"
+=======
+            "time": "2017-07-01T08:51:00+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "sebastian/exporter",
@@ -3661,7 +3954,11 @@
                 "export",
                 "exporter"
             ],
+<<<<<<< HEAD
             "time": "2017-04-03 13:19:02"
+=======
+            "time": "2017-04-03T13:19:02+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "sebastian/global-state",
@@ -3712,7 +4009,11 @@
             "keywords": [
                 "global state"
             ],
+<<<<<<< HEAD
             "time": "2017-04-27 15:39:26"
+=======
+            "time": "2017-04-27T15:39:26+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "sebastian/object-enumerator",
@@ -3759,7 +4060,11 @@
             ],
             "description": "Traverses array structures and object graphs to enumerate all referenced objects",
             "homepage": "https://github.com/sebastianbergmann/object-enumerator/",
+<<<<<<< HEAD
             "time": "2017-08-03 12:35:26"
+=======
+            "time": "2017-08-03T12:35:26+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "sebastian/object-reflector",
@@ -3804,7 +4109,11 @@
             ],
             "description": "Allows reflection of object attributes, including inherited and non-public ones",
             "homepage": "https://github.com/sebastianbergmann/object-reflector/",
+<<<<<<< HEAD
             "time": "2017-03-29 09:07:27"
+=======
+            "time": "2017-03-29T09:07:27+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "sebastian/recursion-context",
@@ -3857,7 +4166,11 @@
             ],
             "description": "Provides functionality to recursively process PHP variables",
             "homepage": "http://www.github.com/sebastianbergmann/recursion-context",
+<<<<<<< HEAD
             "time": "2017-03-03 06:23:57"
+=======
+            "time": "2017-03-03T06:23:57+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "sebastian/resource-operations",
@@ -3899,7 +4212,11 @@
             ],
             "description": "Provides a list of PHP built-in functions that operate on resources",
             "homepage": "https://www.github.com/sebastianbergmann/resource-operations",
+<<<<<<< HEAD
             "time": "2015-07-28 20:34:47"
+=======
+            "time": "2015-07-28T20:34:47+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "sebastian/version",
@@ -3942,7 +4259,11 @@
             ],
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
+<<<<<<< HEAD
             "time": "2016-10-03 07:35:21"
+=======
+            "time": "2016-10-03T07:35:21+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "symfony/thanks",
@@ -3985,7 +4306,11 @@
                 }
             ],
             "description": "Give thanks (in the form of a GitHub ⭐) to your fellow PHP package maintainers (not limited to Symfony components)!",
+<<<<<<< HEAD
             "time": "2018-08-24 14:08:13"
+=======
+            "time": "2018-08-24T14:08:13+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "theseer/tokenizer",
@@ -4025,7 +4350,11 @@
                 }
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
+<<<<<<< HEAD
             "time": "2017-04-07 12:08:54"
+=======
+            "time": "2017-04-07T12:08:54+00:00"
+>>>>>>> prestasi
         },
         {
             "name": "webmozart/assert",
@@ -4075,7 +4404,11 @@
                 "check",
                 "validate"
             ],
+<<<<<<< HEAD
             "time": "2018-01-29 19:49:41"
+=======
+            "time": "2018-01-29T19:49:41+00:00"
+>>>>>>> prestasi
         }
     ],
     "aliases": [],

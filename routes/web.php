@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -10,13 +9,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::view('/', 'welcome');
-
 Route::get('/index', function () {
     return view('index');
 });
-
 Route::group(['prefix'=>'kelas','as'=>'kelas.'],function(){
 	Route::get('/','KelasController@index')->name('index');
 	Route::get('/create','KelasController@create')->name('create');
@@ -25,18 +21,14 @@ Route::group(['prefix'=>'kelas','as'=>'kelas.'],function(){
 	Route::post('/update','KelasController@update')->name('update');
 	Route::get('/delete/{id}','KelasController@delete')->name('delete');
 });
-
-
 Route::group(['prefix'=>'prestasi','as'=>'prestasi.'],function(){
 	Route::get('/','PrestasiController@index')->name('index');
 	Route::get('/create','PrestasiController@create')->name('create');
 	Route::post('save','PrestasiController@save')->name('save');
 	Route::get('/edit/{id}','PrestasiController@edit')->name('edit');
 	Route::post('/update','PrestasiController@update')->name('update');
-	Route::get('/delete','PrestasiController@delete')->name('delete');
+	Route::post('/delete','PrestasiController@delete')->name('delete');
 });
-
-
 Route::group(['prefix'=>'pengumuman','as'=>'pengumuman.'],function(){
 	Route::get('/','PengumumanController@index')->name('index');
 	Route::get('/create','PengumumanController@create')->name('create');
@@ -45,9 +37,6 @@ Route::group(['prefix'=>'pengumuman','as'=>'pengumuman.'],function(){
 	Route::post('/update','PengumumanController@update')->name('update');
 	Route::get('/delete','PengumumanController@delete')->name('delete');
 });
-
-
-
 Route::group(['prefix'=>'staff','as'=>'staff.'],function(){
 	Route::get('/','StaffController@index')->name('index');
 	Route::get('/create','StaffController@create')->name('create');
@@ -56,7 +45,6 @@ Route::group(['prefix'=>'staff','as'=>'staff.'],function(){
 	Route::post('/update','StaffController@update')->name('update');
 	Route::get('/delete/{id}','StaffController@delete')->name('delete');
 });
-
 Route::group(['prefix'=>'acara','as'=>'acara.'],function(){
 	Route::get('/','AcaraController@index')->name('index');
 	Route::get('/create','AcaraController@create')->name('create');
@@ -67,10 +55,7 @@ Route::group(['prefix'=>'acara','as'=>'acara.'],function(){
 	Route::get('/delete','AcaraController@delete')->name('delete');
 	Route::post('/acara/delete','AcaraController@deleteAcara')->name('deleted');	
 });
-
-
 Route::resource('guru', 'GuruController');
-
 
 Route::group(['prefix'=>'siswa','as'=>'siswa.'],function(){
 	Route::get('/','SiswaController@index')->name('index');
