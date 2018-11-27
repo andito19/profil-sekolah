@@ -135,10 +135,10 @@
                           </td>
                           <td>
                           <button type="submit" class="btn btn-danger">Hapus</button>  
+                        </form>
                           <a href="{{ route('prestasi.edit', ['Id' => $prestasi->id]) }}" class="btn btn-success">Edit</a>
                           </td>
                         </tr>
-                        </form>
                         @endforeach
                         @endif
                       </tbody>

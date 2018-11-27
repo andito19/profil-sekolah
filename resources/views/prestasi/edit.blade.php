@@ -100,7 +100,7 @@
                 <h5 class="card-title">Tambah Prestasi</h5>
               </div>
               <div class="card-body">
-                <form action="{{ route('prestasi.editsave') }}" method="POST">
+                <form action="{{ route('prestasi.update') }}" method="POST">
                 {{ csrf_field() }}
                   <div class="row">
                     <div class="col-md-12">
